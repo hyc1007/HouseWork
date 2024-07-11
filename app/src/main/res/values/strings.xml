@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ChiefWork</string>
+    <string name="debit_str">debit: %s</string>
+    <string name="credit_str">credit: %s</string>
+    <string name="category_str">category: %s</string>
+
+</resources>

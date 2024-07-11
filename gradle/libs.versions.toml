@@ -1,0 +1,92 @@
+[versions]
+versionCode = "1"
+versionName = "1.0.0"
+compileSdkVersion = "34"
+targetSdkVersion = "34"
+minSdkVersion = "26"
+applicationId = "com.gctl.demo"
+#compose的kotlin编译器版本
+composekotlinCompiler = "1.4.3"
+core-ktx = "1.9.0"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+appcompat = "1.6.1"
+material = "1.8.0"
+
+
+
+
+
+[libraries]
+#=================kotlin相关========================
+ktx-stdlib = "org.jetbrains.kotlin:kotlin-stdlib:1.9.21"
+ktx-coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
+ktx-reflect = "org.jetbrains.kotlin:kotlin-reflect:1.9.20"
+ktx-androidx-core = "androidx.core:core-ktx:1.10.0"
+ktx-lifecycle = "androidx.lifecycle:lifecycle-runtime-ktx:2.6.0"
+ktx-viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0"
+
+#=================android相关========================
+android-recyclerview = "androidx.recyclerview:recyclerview:1.3.2"
+android-appcompat = "androidx.appcompat:appcompat:1.6.1"
+android-swipelayout = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+android-constraintlayout = "androidx.constraintlayout:constraintlayout:2.1.4"
+appcompat = "androidx.appcompat:appcompat:1.6.1"
+material = "com.google.android.material:material:1.11.0"
+
+#=================jdk jvm版本设置相关=================
+jdk-libs-desugar = { group = "com.android.tools", name = "desugar_jdk_libs", version = "2.0.0" }
+
+#=================asm相关=================
+asm-common =  "org.ow2.asm:asm-commons:9.6"
+
+#=================gradle插件task相关=================
+gradle-plugin-android = { group = "com.android.tools.build", name = "gradle", version = "8.0.2" }
+gradle-plugin-kotlin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version = "1.8.10" }
+
+#=================compose相关=======================
+compose-activity = { group = "androidx.activity", name = "activity-compose", version = "1.7.2" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version = "2023.03.00" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-material3-android = { group = "androidx.compose.material3", name = "material3-android", version = "1.2.1" }
+compose-viewmodel = "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2"
+
+
+#=================第三方库相关====================
+third-gson = "com.google.code.gson:gson:2.10"
+third-retrofit-json = "com.squareup.retrofit2:converter-gson:2.9.0"
+third-retrofit = "com.squareup.retrofit2:retrofit:2.9.0"
+third-glide = "com.github.bumptech.glide:glide:4.12.0"
+
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+androidx-appcompat-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+com-google-android-material-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+
+[plugins]
+android-app = { id = "com.android.application", version = "8.1.3" }
+android-lib = { id = "com.android.library", version = "8.1.3" }
+kotlin = { id = "org.jetbrains.kotlin.android", version = "1.8.10" }
+
+#====================bgct使用插件===================
+bgct-app-plugin = { id = "bgct.app.plugin", version = "unspecified" }
+bgct-compose-plugin = { id = "bgct.compose.plugin", version = "unspecified" }
+bgct-compose-lib-plugin = { id = "bgct.compose.lib.plugin", version = "unspecified" }
+bgct-lib-plugin = { id = "bgct.lib.plugin", version = "unspecified" }
+
+[bundles]
+compose = ["compose-ui", "compose-ui-graphics","compose-material3-android", "compose-activity", "compose-ui-tooling-preview","compose-viewmodel"]
+compose_debug = ["compose-ui-tooling", "compose-ui-test-manifest"]
+ktx-core = ["ktx-stdlib", "ktx-coroutines", "ktx-reflect", ]
+ktx-androidx = ["ktx-lifecycle", "ktx-viewmodel", "ktx-androidx-core"]
+retrofit = ['third-gson', 'third-retrofit', 'third-retrofit-json']
+

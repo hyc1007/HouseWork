@@ -1,0 +1,7 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+<resources>
+    <declare-styleable name="NestedSwipeLayout">
+        <attr name="header_id" format="reference" />
+        <attr name="footer_id" format="reference" />
+    </declare-styleable>
+</resources>
