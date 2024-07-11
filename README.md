@@ -1,8 +1,8 @@
 This project is a written test for Chief , The development environment used is as follows:
-Android Studio Giraffe
-Jdk 17
-compileSdkVersion 34
-compose-bom 2023.03.00
+Android Studio Giraffe,
+Jdk 17,
+compileSdkVersion 34,
+compose-bom 2023.03.00.
 
 because the back-end interface does not provide the parameters required for page loading (such as the number of data per page, the current loading page, etc.), so the dropdown loading in the app uses the repeated data on the first page to demonstrate page loading. You can use the getAccountData method of ChiefApi class in the code. Change the names of the two query parameters to actually implement page loading.
 app-debug.apk is the compiled apk, and apk_test.mp4 is the demo demo video.
